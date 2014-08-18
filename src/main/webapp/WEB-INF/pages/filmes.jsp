@@ -11,7 +11,10 @@
 	$(document).ready(function() {
 	    $('#filmes').dataTable({
 	    	  "info":     false,
-	    	  "paging":   false
+	    	  "paging":   false,
+	    	  "oLanguage": {
+	    	         "sSearch": "Filtrar resultados:"
+	    	       }
 	    });
     });
 </script>
@@ -21,6 +24,9 @@
  <p style="text-align:center">
    <img src="${pageContext.request.contextPath}/resources/judcon2014br.png" alt="logo" width="556"/>
  </p>
+
+ <a  class="btn btn-primary btn-lg"  href="javascript:history.back()">Voltar</a>
+
  <table id="filmes" class="display" cellspacing="0" width="100%">
   <thead>
    <tr>
@@ -35,6 +41,9 @@
    </c:forEach>
   </tbody>
  </table>
+ <br/>
+  <div class="alert alert-warning alert-dismissible" >Exibindo at&eacute; 100 resultados <span class="sr-only">Close</span></div>
+ <a  class="btn btn-primary btn-lg"  href="javascript:history.back()">Voltar</a>
  <br/>
  <p style="text-align:center">
    <img src="${pageContext.request.contextPath}/resources/PoweredMongoDB.png" alt="logo" width="129"/>

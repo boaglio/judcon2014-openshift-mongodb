@@ -12,6 +12,9 @@
 	    $('#votos').dataTable({
 	    	  "info":     false,
 	    	  "paging":   false,
+	    	  "oLanguage": {
+	    	         "sSearch": "Filtrar resultados:"
+	    	       },
 	    	  "order": [[ 1, "desc" ]]
 	    });
     });

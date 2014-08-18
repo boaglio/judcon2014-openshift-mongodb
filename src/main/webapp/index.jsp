@@ -20,10 +20,12 @@
     </div>
    </p>
    <p>
-    <input class="btn btn-primary btn-lg" type="submit" value="buscar!" />
+    <input class="btn btn-primary btn-lg" type="submit" value="buscar !" />
    </p>
   </form>
-  <div class="alert alert-info" role="alert"><a href="${pageContext.request.contextPath}/votos">Filmes mais votados</a></div>
+   <form method="get" action="votos">
+    <input class="btn btn-primary btn-lg" type="submit" value="filmes mais votados" />
+   </form>
   <br/>
   <p style="text-align:center">
    <img src="${pageContext.request.contextPath}/resources/PoweredMongoDB.png" alt="logo" width="129"/>
